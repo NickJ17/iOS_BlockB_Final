@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3F228A1F1E9BC537001C6DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F228A1E1E9BC537001C6DDD /* AppDelegate.swift */; };
-		3F228A211E9BC537001C6DDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F228A201E9BC537001C6DDD /* ViewController.swift */; };
+		3F228A211E9BC537001C6DDD /* GeotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F228A201E9BC537001C6DDD /* GeotificationsViewController.swift */; };
 		3F228A241E9BC537001C6DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F228A221E9BC537001C6DDD /* Main.storyboard */; };
 		3F228A261E9BC537001C6DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F228A251E9BC537001C6DDD /* Assets.xcassets */; };
 		3F228A291E9BC537001C6DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F228A271E9BC537001C6DDD /* LaunchScreen.storyboard */; };
+		3FD59BB61EB22792006B2751 /* AddGeotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD59BB51EB22792006B2751 /* AddGeotificationsViewController.swift */; };
+		3FD59BB81EB2282F006B2751 /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD59BB71EB2282F006B2751 /* Geotification.swift */; };
+		3FD59BBA1EB22875006B2751 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD59BB91EB22875006B2751 /* Utilities.swift */; };
+		3FD59BDB1EB783A2006B2751 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD59BDA1EB783A2006B2751 /* MapKit.framework */; };
+		3FD59BDD1EB783B0006B2751 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD59BDC1EB783B0006B2751 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F228A1B1E9BC537001C6DDD /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F228A1E1E9BC537001C6DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F228A201E9BC537001C6DDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F228A201E9BC537001C6DDD /* GeotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeotificationsViewController.swift; sourceTree = "<group>"; };
 		3F228A231E9BC537001C6DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F228A251E9BC537001C6DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F228A281E9BC537001C6DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F228A2A1E9BC537001C6DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD59BB51EB22792006B2751 /* AddGeotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationsViewController.swift; sourceTree = "<group>"; };
+		3FD59BB71EB2282F006B2751 /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
+		3FD59BB91EB22875006B2751 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		3FD59BDA1EB783A2006B2751 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3FD59BDC1EB783B0006B2751 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD59BDD1EB783B0006B2751 /* CoreLocation.framework in Frameworks */,
+				3FD59BDB1EB783A2006B2751 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,7 @@
 			children = (
 				3F228A1D1E9BC537001C6DDD /* Final Project */,
 				3F228A1C1E9BC537001C6DDD /* Products */,
+				3FD59BD91EB783A2006B2751 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +68,25 @@
 			isa = PBXGroup;
 			children = (
 				3F228A1E1E9BC537001C6DDD /* AppDelegate.swift */,
-				3F228A201E9BC537001C6DDD /* ViewController.swift */,
+				3F228A201E9BC537001C6DDD /* GeotificationsViewController.swift */,
+				3FD59BB71EB2282F006B2751 /* Geotification.swift */,
+				3FD59BB51EB22792006B2751 /* AddGeotificationsViewController.swift */,
+				3FD59BB91EB22875006B2751 /* Utilities.swift */,
 				3F228A221E9BC537001C6DDD /* Main.storyboard */,
 				3F228A251E9BC537001C6DDD /* Assets.xcassets */,
 				3F228A271E9BC537001C6DDD /* LaunchScreen.storyboard */,
 				3F228A2A1E9BC537001C6DDD /* Info.plist */,
 			);
 			path = "Final Project";
+			sourceTree = "<group>";
+		};
+		3FD59BD91EB783A2006B2751 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FD59BDC1EB783B0006B2751 /* CoreLocation.framework */,
+				3FD59BDA1EB783A2006B2751 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F228A211E9BC537001C6DDD /* ViewController.swift in Sources */,
+				3FD59BB61EB22792006B2751 /* AddGeotificationsViewController.swift in Sources */,
+				3F228A211E9BC537001C6DDD /* GeotificationsViewController.swift in Sources */,
 				3F228A1F1E9BC537001C6DDD /* AppDelegate.swift in Sources */,
+				3FD59BBA1EB22875006B2751 /* Utilities.swift in Sources */,
+				3FD59BB81EB2282F006B2751 /* Geotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +325,7 @@
 				3F228A2F1E9BC537001C6DDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
