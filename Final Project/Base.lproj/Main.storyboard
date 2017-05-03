@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WDd-YD-Pxz">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WDd-YD-Pxz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +21,7 @@
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <segmentedControl key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="HLp-RK-ir8">
-                            <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Upon Entry"/>
@@ -29,19 +32,24 @@
                             <tableViewSection id="VAR-UF-nYg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="338" id="Jfs-r3-Q78">
-                                        <rect key="frame" x="0.0" y="94" width="375" height="338"/>
+                                        <rect key="frame" x="0.0" y="30" width="375" height="338"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jfs-r3-Q78" id="JqW-H3-Dyi">
-                                            <frame key="frameInset" width="375" height="337"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="338"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KcZ-eX-Z2C">
-                                                    <frame key="frameInset" minY="8" width="375" height="329"/>
+                                                    <rect key="frame" x="0.0" y="8" width="375" height="329"/>
+                                                    <gestureRecognizers/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="243" id="o8Z-iu-5vn"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="YEA-Cg-c1C" appends="YES" id="Wng-xa-gOt"/>
+                                                    </connections>
                                                 </mapView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddPin" translatesAutoresizingMaskIntoConstraints="NO" id="IIg-rV-agV">
+                                                    <rect key="frame" x="150" y="118" width="75" height="75"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="75" id="Y0z-Ti-qil"/>
                                                         <constraint firstAttribute="width" constant="75" id="t80-Ew-euy"/>
@@ -58,14 +66,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="mqj-f6-KzY">
-                                        <rect key="frame" x="0.0" y="432" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="368" width="375" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mqj-f6-KzY" id="mjt-xe-EH3">
-                                            <frame key="frameInset" width="375" height="42"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="in6-hC-K8n">
-                                                    <frame key="frameInset" minX="8" minY="10" width="73" height="21"/>
+                                                    <rect key="frame" x="8" y="10" width="73" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="73" id="3sK-3V-gI3"/>
                                                     </constraints>
@@ -74,7 +82,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NB2-av-mCa">
-                                                    <frame key="frameInset" minX="89" minY="6" width="278" height="30"/>
+                                                    <rect key="frame" x="89" y="6" width="278" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -93,13 +101,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="38" id="cQY-sS-A2b">
-                                        <rect key="frame" x="0.0" y="475" width="375" height="38"/>
+                                        <rect key="frame" x="0.0" y="411" width="375" height="38"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cQY-sS-A2b" id="d9T-3s-JBu">
-                                            <frame key="frameInset" width="375" height="37"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpI-fN-uom">
+                                                    <rect key="frame" x="16" y="10" width="55" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="55" id="iQt-uA-JdZ"/>
                                                     </constraints>
@@ -108,9 +117,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reminder note to be shown" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Hr-oA-Tqe">
+                                                    <rect key="frame" x="90" y="4" width="208.5" height="29"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldEditingChangedWithSender:" destination="avp-fa-HgW" eventType="editingDidEnd" id="Hxo-yh-pzq"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -134,18 +147,18 @@
                     <navigationItem key="navigationItem" title="Add Geotification" id="nxm-gT-l8u">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RZj-3y-Kp1">
                             <connections>
-                                <action selector="onCancelWithSender:" destination="b57-e8-Lok" id="6q0-ga-nRf"/>
+                                <action selector="onCancelWithSender:" destination="avp-fa-HgW" id="IrO-Ni-SIe"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="28X-ET-5ZC">
                                 <connections>
-                                    <action selector="onAddWithSender:" destination="b57-e8-Lok" id="lDi-2c-YZM"/>
+                                    <action selector="onAddWithSender:" destination="avp-fa-HgW" id="Blh-Zk-f6n"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="CurrentLocation" id="fXM-qg-X7W">
                                 <connections>
-                                    <action selector="onZoomToCurrentLocationWithSender:" destination="b57-e8-Lok" id="jRU-H1-Beu"/>
+                                    <action selector="onZoomToCurrentLocationWithSender:" destination="avp-fa-HgW" id="FoT-GQ-7gb"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -154,19 +167,20 @@
                         <outlet property="addButton" destination="28X-ET-5ZC" id="4CL-Mh-1Ta"/>
                         <outlet property="eventTypeSegmentedControl" destination="HLp-RK-ir8" id="68C-KW-qIV"/>
                         <outlet property="mapView" destination="KcZ-eX-Z2C" id="kqF-J5-sIA"/>
-                        <outlet property="noteTextField" destination="4Hr-oA-Tqe" id="xVD-9A-Otu"/>
-                        <outlet property="radiusTextField" destination="NB2-av-mCa" id="QLc-OY-quM"/>
+                        <outlet property="noteTextField" destination="4Hr-oA-Tqe" id="jk8-Wu-z9d"/>
+                        <outlet property="radiusTextField" destination="NB2-av-mCa" id="DSo-iG-lHX"/>
                         <outlet property="zoomButton" destination="fXM-qg-X7W" id="Qwr-5q-YCa"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b57-e8-Lok" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YEA-Cg-c1C"/>
             </objects>
             <point key="canvasLocation" x="3038" y="221"/>
         </scene>
         <!--Geotifications (0)-->
         <scene sceneID="ho0-61-Gfq">
             <objects>
-                <viewController id="yLr-Ed-oJR" sceneMemberID="viewController">
+                <viewController id="yLr-Ed-oJR" customClass="GeotificationsViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cl3-kS-VXI"/>
                         <viewControllerLayoutGuide type="bottom" id="h8m-4R-0pZ"/>
@@ -175,7 +189,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KUl-Mt-3s8"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KUl-Mt-3s8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -186,13 +202,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Geotifications (0)" id="ZQL-he-VFf">
-                        <barButtonItem key="leftBarButtonItem" image="CurrentLocation" id="f64-g3-jAU"/>
+                        <barButtonItem key="leftBarButtonItem" image="CurrentLocation" id="f64-g3-jAU">
+                            <connections>
+                                <action selector="zoomToCurrentLocationWithSender:" destination="yLr-Ed-oJR" id="ztV-kb-67J"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="PJx-BM-FvX">
                             <connections>
                                 <segue destination="tgf-Hr-3wZ" kind="presentation" id="0q7-ko-BFo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="KUl-Mt-3s8" id="x3R-aJ-rgh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXm-KJ-M2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

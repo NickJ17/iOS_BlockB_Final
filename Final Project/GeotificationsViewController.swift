@@ -10,9 +10,11 @@ import UIKit
 import MapKit
 import CoreLocation
 
+
 struct PreferenceKeys {
     static let savedItems = "savedItems"
 }
+
 
 class GeotificationsViewController: UIViewController {
 
